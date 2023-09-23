@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1> Welcome the predict Textile Waste app</h1>
+    <form action="/predict" method="POST">
+        selec the algorithm = <select name="model" id="model">
+            <option value="linear_regression"> Linear Regression</option>
+            <option value="random_forest"> Random Forest </option>
+        </select>    
+        EPI = <input type="number" name="epi" placeholder="EPI" value="80">
+        PPI = <input type="number" name="ppi" placeholder="PPI" value="60">
+        Warp Count = <input type="number" name="warp_count" placeholder="warp count" value="40">
+        Weft Count = <input type="number" name="weft_count" placeholder="weft_count" value="40">
+        <div>
+            remark = <select name="remark" id="remark">
+                <option value="1">normal</option>
+                <option value="0">double beam</option>
+                <option value="2">double yarn </option>
+            </select>
+
+        </div>
+        
+        finish order = <input type="number" name="finish_order" placeholder="finish order" value="1500">
+        shrinkage = <input type="number" name="shrinkage" placeholder="shrinkage" value="12">
+
+        <button type="submit">submit</button>
+
+
+    </form>
+
+
+    
+</body>
+</html>
